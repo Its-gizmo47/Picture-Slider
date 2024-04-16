@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    height: 80vh;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.pictures{
+    height: 80vh;
+    width: 100%;
+    border-radius: 50px;
+    flex: 0.4;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+.pictures h2{
+    color: white;
+    position: absolute;
+    bottom: 6%;
+    left: 3%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+.active{
+    flex: 5;
+}
+.active h2{
+    opacity: 1;
+}
+.pic1 h2, .pic4 h2{
+    color: black;
+}
+.pic6 h2{
+    bottom: 9%;
+}
+.pic1{
+    background-image: url(../img/gizmooo.PNG);
+}
+.pic2{
+    background-image: url(../img/spiderman-into-the-spider-verse-movie-2018-logo-14.jpg);
+}
+.pic3{
+    background-image: url(../img/dc-new-logo-4k-hr.jpg);
+}
+.pic4{
+    background-image: url(../img/despicable-me-3-2017-uj.jpg);
+    border: 1px solid gray;
+}
+.pic5{
+    background-image: url(../img/kylo-ren-star-wars.jpg);
+}
+.pic6{
+    background-image: url(../img/moon-knight-tv-show-5k-ng.jpg);
+    border: 1px solid gray;
+}
